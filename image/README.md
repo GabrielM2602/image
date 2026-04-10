@@ -1,2 +1,2 @@
 # image
-Projeto Desenvolvido em Sala de Aula para exemplificar uso prática das Tecnologias Spring, React com PostGree
+Uso de práticas de Tecnologias: Spring, React com PostGre
