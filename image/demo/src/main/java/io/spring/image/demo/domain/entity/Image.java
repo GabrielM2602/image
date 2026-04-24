@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Columns;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -36,8 +37,8 @@ public class Image {
         private LocalDateTime uploadDate;
         @Column
         private String tags;
-        @Column
         @Lob
+        @Column(name = "file", columnDefinition="LONGBLOB")
         private byte[] file;
 
     }
